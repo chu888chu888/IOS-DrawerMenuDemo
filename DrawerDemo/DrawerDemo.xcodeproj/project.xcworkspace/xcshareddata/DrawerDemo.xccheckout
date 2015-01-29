@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>52E3C153-597A-414C-824E-847E3B1B7F06</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DrawerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DBE2B205BD257F7180823B56A21BD8492D169384</key>
+		<string>https://github.com/chu888chu888/IOS-DrawerMenuDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DrawerDemo/DrawerDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DBE2B205BD257F7180823B56A21BD8492D169384</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chu888chu888/IOS-DrawerMenuDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DBE2B205BD257F7180823B56A21BD8492D169384</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DBE2B205BD257F7180823B56A21BD8492D169384</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DrawerMenuDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

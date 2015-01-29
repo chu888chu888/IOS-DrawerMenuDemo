@@ -14,6 +14,10 @@
 #import "UIColor+Base.h"
 #import "UIFont+Base.h"
 #import "UIView+Base.h"
+#import "TypeMessageViewController.h"
+#import "TypeQueryViewController.h"
+#import "TypeResumeViewController.h"
+#import "TypeSetViewController.h"
 NSString * const SideMenuCellReuseIdentifier = @"SideMenuCell";
 NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
 
@@ -181,10 +185,10 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
                                       };
     
     self.paneViewControllerClasses = @{
-                                       @(PaneViewControllerTypeResume) : [HomeViewController class],
-                                       @(PaneViewControllerTypeQuery) : [HomeViewController class],
-                                       @(PaneViewControllerTypeMessage) : [HomeViewController class],
-                                       @(PaneViewControllerTypeSet) : [HomeViewController class],
+                                       @(PaneViewControllerTypeResume) : [TypeResumeViewController class],
+                                       @(PaneViewControllerTypeQuery) : [TypeQueryViewController class],
+                                       @(PaneViewControllerTypeMessage) : [TypeMessageViewController class],
+                                       @(PaneViewControllerTypeSet) : [TypeSetViewController class],
                                        };
     self.paneViewControllerImages = @{
                                       @(PaneViewControllerTypeMessage) : @"Icon-Small-Message.png",
@@ -212,7 +216,7 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
 
     Class paneViewControllerClass = self.paneViewControllerClasses[@(paneViewControllerType)];
     UIViewController *paneViewController = (UIViewController *)[paneViewControllerClass new];
-    
+    paneViewController.navigationItem.title=self.paneViewControllerTitles[@(paneViewControllerType)];
     [_hallPaneViewController.navigationController pushViewController:paneViewController animated:YES];
     
     self.paneViewControllerType = paneViewControllerType;

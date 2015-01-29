@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B94FF3A21A7A137700622810 /* TypeResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3A11A7A137700622810 /* TypeResumeViewController.m */; };
+		B94FF3A51A7A138C00622810 /* TypeQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3A41A7A138C00622810 /* TypeQueryViewController.m */; };
+		B94FF3A81A7A139E00622810 /* TypeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3A71A7A139E00622810 /* TypeMessageViewController.m */; };
+		B94FF3AB1A7A13B100622810 /* TypeSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3AA1A7A13B100622810 /* TypeSetViewController.m */; };
 		B97FE39D1A79CA3500737AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE39C1A79CA3500737AC1 /* main.m */; };
 		B97FE3A01A79CA3500737AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE39F1A79CA3500737AC1 /* AppDelegate.m */; };
 		B97FE3A31A79CA3500737AC1 /* DrawerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B97FE3A11A79CA3500737AC1 /* DrawerDemo.xcdatamodeld */; };
@@ -52,6 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B94FF3A01A7A137700622810 /* TypeResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeResumeViewController.h; sourceTree = "<group>"; };
+		B94FF3A11A7A137700622810 /* TypeResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeResumeViewController.m; sourceTree = "<group>"; };
+		B94FF3A31A7A138C00622810 /* TypeQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeQueryViewController.h; sourceTree = "<group>"; };
+		B94FF3A41A7A138C00622810 /* TypeQueryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeQueryViewController.m; sourceTree = "<group>"; };
+		B94FF3A61A7A139E00622810 /* TypeMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeMessageViewController.h; sourceTree = "<group>"; };
+		B94FF3A71A7A139E00622810 /* TypeMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeMessageViewController.m; sourceTree = "<group>"; };
+		B94FF3A91A7A13B100622810 /* TypeSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeSetViewController.h; sourceTree = "<group>"; };
+		B94FF3AA1A7A13B100622810 /* TypeSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeSetViewController.m; sourceTree = "<group>"; };
 		B97FE3971A79CA3500737AC1 /* DrawerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97FE39B1A79CA3500737AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B97FE39C1A79CA3500737AC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +134,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B94FF3AC1A7A13EC00622810 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B94FF3AD1A7A13F300622810 /* Controller */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		B94FF3AD1A7A13F300622810 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B97FE3D61A79CBA300737AC1 /* SideMenuTableViewController.h */,
+				B97FE3D71A79CBA300737AC1 /* SideMenuTableViewController.m */,
+				B97FE3D91A79CBB500737AC1 /* HomeViewController.h */,
+				B97FE3DA1A79CBB500737AC1 /* HomeViewController.m */,
+				B94FF3A01A7A137700622810 /* TypeResumeViewController.h */,
+				B94FF3A11A7A137700622810 /* TypeResumeViewController.m */,
+				B94FF3A31A7A138C00622810 /* TypeQueryViewController.h */,
+				B94FF3A41A7A138C00622810 /* TypeQueryViewController.m */,
+				B94FF3A61A7A139E00622810 /* TypeMessageViewController.h */,
+				B94FF3A71A7A139E00622810 /* TypeMessageViewController.m */,
+				B94FF3A91A7A13B100622810 /* TypeSetViewController.h */,
+				B94FF3AA1A7A13B100622810 /* TypeSetViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B94FF3AE1A7A140600622810 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA47AA1A79D02000212F59 /* Common */,
+				B9AA47A01A79CF8900212F59 /* MSDynamicsDrawerViewController */,
+			);
+			name = Vender;
+			sourceTree = "<group>";
+		};
 		B97FE38E1A79CA3500737AC1 = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +191,8 @@
 		B97FE3991A79CA3500737AC1 /* DrawerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B9AA47AA1A79D02000212F59 /* Common */,
-				B9AA47A01A79CF8900212F59 /* MSDynamicsDrawerViewController */,
+				B94FF3AE1A7A140600622810 /* Vender */,
+				B94FF3AC1A7A13EC00622810 /* MVC */,
 				B97FE3BD1A79CB8100737AC1 /* Images */,
 				B97FE39E1A79CA3500737AC1 /* AppDelegate.h */,
 				B97FE39F1A79CA3500737AC1 /* AppDelegate.m */,
@@ -152,10 +200,6 @@
 				B97FE3A61A79CA3600737AC1 /* LaunchScreen.xib */,
 				B97FE3A11A79CA3500737AC1 /* DrawerDemo.xcdatamodeld */,
 				B97FE39A1A79CA3500737AC1 /* Supporting Files */,
-				B97FE3D61A79CBA300737AC1 /* SideMenuTableViewController.h */,
-				B97FE3D71A79CBA300737AC1 /* SideMenuTableViewController.m */,
-				B97FE3D91A79CBB500737AC1 /* HomeViewController.h */,
-				B97FE3DA1A79CBB500737AC1 /* HomeViewController.m */,
 			);
 			path = DrawerDemo;
 			sourceTree = "<group>";
@@ -369,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94FF3A81A7A139E00622810 /* TypeMessageViewController.m in Sources */,
 				B9AA47C61A79D5E300212F59 /* UIView+Base.m in Sources */,
 				B9AA47A81A79CF8900212F59 /* MSDynamicsDrawerViewController.m in Sources */,
 				B97FE3A31A79CA3500737AC1 /* DrawerDemo.xcdatamodeld in Sources */,
@@ -383,9 +428,12 @@
 				B97FE39D1A79CA3500737AC1 /* main.m in Sources */,
 				B9AA47B31A79D18100212F59 /* M13BadgeView.m in Sources */,
 				B9AA47B41A79D18100212F59 /* README.md in Sources */,
+				B94FF3AB1A7A13B100622810 /* TypeSetViewController.m in Sources */,
 				B9AA47C51A79D5E300212F59 /* UILabel+Base.m in Sources */,
+				B94FF3A21A7A137700622810 /* TypeResumeViewController.m in Sources */,
 				B9AA47A71A79CF8900212F59 /* MSDynamicsDrawerStyler.m in Sources */,
 				B9AA47B91A79D44C00212F59 /* SideMenuCell.m in Sources */,
+				B94FF3A51A7A138C00622810 /* TypeQueryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

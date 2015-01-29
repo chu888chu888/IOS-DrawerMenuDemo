@@ -10,6 +10,7 @@
 #import "SideMenuTableViewController.h"
 #import "UIColor+Base.h"
 #import "MSDynamicsDrawerViewController.h"
+#import "HomeViewController.h"
 @interface AppDelegate ()<MSDynamicsDrawerViewControllerDelegate>
 @property (nonatomic, strong) UIImageView *windowBackground;
 @end
@@ -62,6 +63,71 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
+#pragma mark - MSAppDelegate
+
+//- (UIImageView *)windowBackground
+//{
+//    if (!_windowBackground) {
+//        _windowBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Window-Background"]];
+//        _windowBackground.frame = self.window.frame;
+//    }
+//    return _windowBackground;
+//}
+
+- (NSString *)descriptionForPaneState:(MSDynamicsDrawerPaneState)paneState
+{
+    switch (paneState) {
+        case MSDynamicsDrawerPaneStateOpen:
+            return @"MSDynamicsDrawerPaneStateOpen";
+        case MSDynamicsDrawerPaneStateClosed:
+            return @"MSDynamicsDrawerPaneStateClosed";
+        case MSDynamicsDrawerPaneStateOpenWide:
+            return @"MSDynamicsDrawerPaneStateOpenWide";
+        default:
+            return nil;
+    }
+}
+
+- (NSString *)descriptionForDirection:(MSDynamicsDrawerDirection)direction
+{
+    switch (direction) {
+        case MSDynamicsDrawerDirectionTop:
+            return @"MSDynamicsDrawerDirectionTop";
+        case MSDynamicsDrawerDirectionLeft:
+            return @"MSDynamicsDrawerDirectionLeft";
+        case MSDynamicsDrawerDirectionBottom:
+            return @"MSDynamicsDrawerDirectionBottom";
+        case MSDynamicsDrawerDirectionRight:
+            return @"MSDynamicsDrawerDirectionRight";
+        default:
+            return nil;
+    }
+}
+
+#pragma mark - MSDynamicsDrawerViewControllerDelegate
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController mayUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
+{
+    //    NSLog(@"Drawer view controller may update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
+}
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController didUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
+{
+    //    NSLog(@"Drawer view controller did update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
+}
+
+//实现只能首页能打开抽屉
+- (BOOL)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController shouldBeginPanePan:(UIPanGestureRecognizer *)panGestureRecognizer{
+    if ([drawerViewController.paneViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *tempNav = (UINavigationController*)drawerViewController.paneViewController;
+        if ([tempNav.visibleViewController isKindOfClass:[HomeViewController class]]) {
+            return YES;
+        }
+    };
+    return NO;
+}
+
 
 #pragma mark - Core Data stack
 
