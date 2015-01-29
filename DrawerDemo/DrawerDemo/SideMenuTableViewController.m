@@ -167,59 +167,7 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
         [self.tableView reloadData];
     });
 }
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 #pragma mark - MSMenuViewController
 
 - (void)initialize
@@ -262,10 +210,23 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
 - (void)transitionToViewController:(PaneViewControllerType)paneViewControllerType
 {
 
+    Class paneViewControllerClass = self.paneViewControllerClasses[@(paneViewControllerType)];
+    UIViewController *paneViewController = (UIViewController *)[paneViewControllerClass new];
     
+    [_hallPaneViewController.navigationController pushViewController:paneViewController animated:YES];
+    
+    self.paneViewControllerType = paneViewControllerType;
+    [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateClosed animated:YES allowUserInterruption:YES completion:nil];
 }
 
 - (void)performHall {
+    _hallPaneViewController = [HomeViewController new];
+    _hallPaneViewController.navigationItem.title = @"大厅";
+    self.paneRevealLeftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Left-Reveal-Icon"] style:UIBarButtonItemStylePlain target:self action:@selector(dynamicsDrawerRevealLeftBarButtonItemTapped:)];
+    _hallPaneViewController.navigationItem.leftBarButtonItem = self.paneRevealLeftBarButtonItem;
+    
+    UINavigationController *paneNavigationViewController = [[UINavigationController alloc] initWithRootViewController:_hallPaneViewController];
+    [self.dynamicsDrawerViewController setPaneViewController:paneNavigationViewController animated:NO completion:nil];
 }
 
 
@@ -273,5 +234,58 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
 {
     [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateOpen inDirection:MSDynamicsDrawerDirectionLeft animated:YES allowUserInterruption:YES completion:nil];
 }
+#pragma mark - MSAppDelegate
+
+//- (UIImageView *)windowBackground
+//{
+//    if (!_windowBackground) {
+//        _windowBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Window-Background"]];
+//        _windowBackground.frame = self.window.frame;
+//    }
+//    return _windowBackground;
+//}
+
+- (NSString *)descriptionForPaneState:(MSDynamicsDrawerPaneState)paneState
+{
+    switch (paneState) {
+        case MSDynamicsDrawerPaneStateOpen:
+            return @"MSDynamicsDrawerPaneStateOpen";
+        case MSDynamicsDrawerPaneStateClosed:
+            return @"MSDynamicsDrawerPaneStateClosed";
+        case MSDynamicsDrawerPaneStateOpenWide:
+            return @"MSDynamicsDrawerPaneStateOpenWide";
+        default:
+            return nil;
+    }
+}
+
+- (NSString *)descriptionForDirection:(MSDynamicsDrawerDirection)direction
+{
+    switch (direction) {
+        case MSDynamicsDrawerDirectionTop:
+            return @"MSDynamicsDrawerDirectionTop";
+        case MSDynamicsDrawerDirectionLeft:
+            return @"MSDynamicsDrawerDirectionLeft";
+        case MSDynamicsDrawerDirectionBottom:
+            return @"MSDynamicsDrawerDirectionBottom";
+        case MSDynamicsDrawerDirectionRight:
+            return @"MSDynamicsDrawerDirectionRight";
+        default:
+            return nil;
+    }
+}
+
+#pragma mark - MSDynamicsDrawerViewControllerDelegate
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController mayUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
+{
+    //    NSLog(@"Drawer view controller may update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
+}
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController didUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
+{
+    //    NSLog(@"Drawer view controller did update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
+}
+
 
 @end

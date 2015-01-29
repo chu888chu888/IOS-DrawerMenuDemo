@@ -9,20 +9,33 @@
 #import "AppDelegate.h"
 #import "SideMenuTableViewController.h"
 #import "UIColor+Base.h"
-@interface AppDelegate ()
-
+#import "MSDynamicsDrawerViewController.h"
+@interface AppDelegate ()<MSDynamicsDrawerViewControllerDelegate>
+@property (nonatomic, strong) UIImageView *windowBackground;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    
+    self.dynamicsDrawerViewController=[MSDynamicsDrawerViewController new];
+    self.dynamicsDrawerViewController.view.backgroundColor=[UIColor noodleBlack];
+    self.dynamicsDrawerViewController.delegate = self;
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler],[MSDynamicsDrawerShadowStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
+    SideMenuTableViewController *menuViewController = [SideMenuTableViewController new];
+    
+    menuViewController.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
+    [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
+    [menuViewController performHall];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    SideMenuTableViewController *sideCV=[SideMenuTableViewController new];
-    self.window.rootViewController=sideCV;
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor noodleBlack];
+    self.window.rootViewController = self.dynamicsDrawerViewController;
     [self.window makeKeyAndVisible];
+
+    
+    
     return YES;
 }
 
