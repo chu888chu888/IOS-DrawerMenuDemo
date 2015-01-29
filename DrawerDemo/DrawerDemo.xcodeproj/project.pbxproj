@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B97FE39D1A79CA3500737AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE39C1A79CA3500737AC1 /* main.m */; };
+		B97FE3A01A79CA3500737AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE39F1A79CA3500737AC1 /* AppDelegate.m */; };
+		B97FE3A31A79CA3500737AC1 /* DrawerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B97FE3A11A79CA3500737AC1 /* DrawerDemo.xcdatamodeld */; };
+		B97FE3A51A79CA3600737AC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3A41A79CA3600737AC1 /* Images.xcassets */; };
+		B97FE3A81A79CA3600737AC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3A61A79CA3600737AC1 /* LaunchScreen.xib */; };
+		B97FE3B41A79CA3600737AC1 /* DrawerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE3B31A79CA3600737AC1 /* DrawerDemoTests.m */; };
+		B97FE3CA1A79CB8100737AC1 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3BE1A79CB8100737AC1 /* check.png */; };
+		B97FE3CB1A79CB8100737AC1 /* Icon-Small-Message.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3BF1A79CB8100737AC1 /* Icon-Small-Message.png */; };
+		B97FE3CC1A79CB8100737AC1 /* Icon-Small-Records.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C01A79CB8100737AC1 /* Icon-Small-Records.png */; };
+		B97FE3CD1A79CB8100737AC1 /* Icon-Small-SelfIntro.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C11A79CB8100737AC1 /* Icon-Small-SelfIntro.png */; };
+		B97FE3CE1A79CB8100737AC1 /* Icon-Small-Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C21A79CB8100737AC1 /* Icon-Small-Setting.png */; };
+		B97FE3CF1A79CB8100737AC1 /* Icon-TitleImage-Promise.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C31A79CB8100737AC1 /* Icon-TitleImage-Promise.png */; };
+		B97FE3D01A79CB8100737AC1 /* Icon-TitleImage-Promise1.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C41A79CB8100737AC1 /* Icon-TitleImage-Promise1.png */; };
+		B97FE3D11A79CB8100737AC1 /* Left-Reveal-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C51A79CB8100737AC1 /* Left-Reveal-Icon.png */; };
+		B97FE3D21A79CB8100737AC1 /* Left-Reveal-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C61A79CB8100737AC1 /* Left-Reveal-Icon@2x.png */; };
+		B97FE3D31A79CB8100737AC1 /* Right-Arrow-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C71A79CB8100737AC1 /* Right-Arrow-Icon.png */; };
+		B97FE3D41A79CB8100737AC1 /* Window- Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C81A79CB8100737AC1 /* Window- Background@2x.png */; };
+		B97FE3D51A79CB8100737AC1 /* Window-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B97FE3C91A79CB8100737AC1 /* Window-Background.png */; };
+		B97FE3D81A79CBA300737AC1 /* SideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE3D71A79CBA300737AC1 /* SideMenuTableViewController.m */; };
+		B97FE3DB1A79CBB500737AC1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97FE3DA1A79CBB500737AC1 /* HomeViewController.m */; };
+		B9AA47A71A79CF8900212F59 /* MSDynamicsDrawerStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47A21A79CF8900212F59 /* MSDynamicsDrawerStyler.m */; };
+		B9AA47A81A79CF8900212F59 /* MSDynamicsDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47A41A79CF8900212F59 /* MSDynamicsDrawerViewController.m */; };
+		B9AA47A91A79CF8900212F59 /* MSDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47A61A79CF8900212F59 /* MSDynamicsViewController.m */; };
+		B9AA47AD1A79D03200212F59 /* UIColor+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47AC1A79D03200212F59 /* UIColor+Base.m */; };
+		B9AA47B31A79D18100212F59 /* M13BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47B11A79D18100212F59 /* M13BadgeView.m */; };
+		B9AA47B41A79D18100212F59 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47B21A79D18100212F59 /* README.md */; };
+		B9AA47B91A79D44C00212F59 /* SideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47B61A79D44C00212F59 /* SideMenuCell.m */; };
+		B9AA47BA1A79D44C00212F59 /* SideMenuTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47B81A79D44C00212F59 /* SideMenuTableViewHeader.m */; };
+		B9AA47C31A79D5E300212F59 /* UIButton+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47BC1A79D5E300212F59 /* UIButton+Base.m */; };
+		B9AA47C41A79D5E300212F59 /* UIFont+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47BE1A79D5E300212F59 /* UIFont+Base.m */; };
+		B9AA47C51A79D5E300212F59 /* UILabel+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47C01A79D5E300212F59 /* UILabel+Base.m */; };
+		B9AA47C61A79D5E300212F59 /* UIView+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA47C21A79D5E300212F59 /* UIView+Base.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B97FE3AE1A79CA3600737AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B97FE38F1A79CA3500737AC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B97FE3961A79CA3500737AC1;
+			remoteInfo = DrawerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B97FE3971A79CA3500737AC1 /* DrawerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97FE39B1A79CA3500737AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97FE39C1A79CA3500737AC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B97FE39E1A79CA3500737AC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B97FE39F1A79CA3500737AC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B97FE3A21A79CA3500737AC1 /* DrawerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawerDemo.xcdatamodel; sourceTree = "<group>"; };
+		B97FE3A41A79CA3600737AC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B97FE3A71A79CA3600737AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B97FE3AD1A79CA3600737AC1 /* DrawerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97FE3B21A79CA3600737AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97FE3B31A79CA3600737AC1 /* DrawerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerDemoTests.m; sourceTree = "<group>"; };
+		B97FE3BE1A79CB8100737AC1 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		B97FE3BF1A79CB8100737AC1 /* Icon-Small-Message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-Message.png"; sourceTree = "<group>"; };
+		B97FE3C01A79CB8100737AC1 /* Icon-Small-Records.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-Records.png"; sourceTree = "<group>"; };
+		B97FE3C11A79CB8100737AC1 /* Icon-Small-SelfIntro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-SelfIntro.png"; sourceTree = "<group>"; };
+		B97FE3C21A79CB8100737AC1 /* Icon-Small-Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-Setting.png"; sourceTree = "<group>"; };
+		B97FE3C31A79CB8100737AC1 /* Icon-TitleImage-Promise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-TitleImage-Promise.png"; sourceTree = "<group>"; };
+		B97FE3C41A79CB8100737AC1 /* Icon-TitleImage-Promise1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-TitleImage-Promise1.png"; sourceTree = "<group>"; };
+		B97FE3C51A79CB8100737AC1 /* Left-Reveal-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left-Reveal-Icon.png"; sourceTree = "<group>"; };
+		B97FE3C61A79CB8100737AC1 /* Left-Reveal-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left-Reveal-Icon@2x.png"; sourceTree = "<group>"; };
+		B97FE3C71A79CB8100737AC1 /* Right-Arrow-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Right-Arrow-Icon.png"; sourceTree = "<group>"; };
+		B97FE3C81A79CB8100737AC1 /* Window- Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Window- Background@2x.png"; sourceTree = "<group>"; };
+		B97FE3C91A79CB8100737AC1 /* Window-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Window-Background.png"; sourceTree = "<group>"; };
+		B97FE3D61A79CBA300737AC1 /* SideMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuTableViewController.h; sourceTree = "<group>"; };
+		B97FE3D71A79CBA300737AC1 /* SideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuTableViewController.m; sourceTree = "<group>"; };
+		B97FE3D91A79CBB500737AC1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B97FE3DA1A79CBB500737AC1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B9AA47A11A79CF8900212F59 /* MSDynamicsDrawerStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerStyler.h; sourceTree = "<group>"; };
+		B9AA47A21A79CF8900212F59 /* MSDynamicsDrawerStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerStyler.m; sourceTree = "<group>"; };
+		B9AA47A31A79CF8900212F59 /* MSDynamicsDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerViewController.h; sourceTree = "<group>"; };
+		B9AA47A41A79CF8900212F59 /* MSDynamicsDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerViewController.m; sourceTree = "<group>"; };
+		B9AA47A51A79CF8900212F59 /* MSDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsViewController.h; sourceTree = "<group>"; };
+		B9AA47A61A79CF8900212F59 /* MSDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsViewController.m; sourceTree = "<group>"; };
+		B9AA47AB1A79D03200212F59 /* UIColor+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Base.h"; sourceTree = "<group>"; };
+		B9AA47AC1A79D03200212F59 /* UIColor+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Base.m"; sourceTree = "<group>"; };
+		B9AA47B01A79D18100212F59 /* M13BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13BadgeView.h; sourceTree = "<group>"; };
+		B9AA47B11A79D18100212F59 /* M13BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13BadgeView.m; sourceTree = "<group>"; };
+		B9AA47B21A79D18100212F59 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B9AA47B51A79D44C00212F59 /* SideMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuCell.h; sourceTree = "<group>"; };
+		B9AA47B61A79D44C00212F59 /* SideMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuCell.m; sourceTree = "<group>"; };
+		B9AA47B71A79D44C00212F59 /* SideMenuTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuTableViewHeader.h; sourceTree = "<group>"; };
+		B9AA47B81A79D44C00212F59 /* SideMenuTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuTableViewHeader.m; sourceTree = "<group>"; };
+		B9AA47BB1A79D5E300212F59 /* UIButton+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Base.h"; sourceTree = "<group>"; };
+		B9AA47BC1A79D5E300212F59 /* UIButton+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Base.m"; sourceTree = "<group>"; };
+		B9AA47BD1A79D5E300212F59 /* UIFont+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Base.h"; sourceTree = "<group>"; };
+		B9AA47BE1A79D5E300212F59 /* UIFont+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Base.m"; sourceTree = "<group>"; };
+		B9AA47BF1A79D5E300212F59 /* UILabel+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Base.h"; sourceTree = "<group>"; };
+		B9AA47C01A79D5E300212F59 /* UILabel+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Base.m"; sourceTree = "<group>"; };
+		B9AA47C11A79D5E300212F59 /* UIView+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Base.h"; sourceTree = "<group>"; };
+		B9AA47C21A79D5E300212F59 /* UIView+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Base.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B97FE3941A79CA3500737AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97FE3AA1A79CA3600737AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B97FE38E1A79CA3500737AC1 = {
+			isa = PBXGroup;
+			children = (
+				B97FE3991A79CA3500737AC1 /* DrawerDemo */,
+				B97FE3B01A79CA3600737AC1 /* DrawerDemoTests */,
+				B97FE3981A79CA3500737AC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B97FE3981A79CA3500737AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B97FE3971A79CA3500737AC1 /* DrawerDemo.app */,
+				B97FE3AD1A79CA3600737AC1 /* DrawerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B97FE3991A79CA3500737AC1 /* DrawerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA47AA1A79D02000212F59 /* Common */,
+				B9AA47A01A79CF8900212F59 /* MSDynamicsDrawerViewController */,
+				B97FE3BD1A79CB8100737AC1 /* Images */,
+				B97FE39E1A79CA3500737AC1 /* AppDelegate.h */,
+				B97FE39F1A79CA3500737AC1 /* AppDelegate.m */,
+				B97FE3A41A79CA3600737AC1 /* Images.xcassets */,
+				B97FE3A61A79CA3600737AC1 /* LaunchScreen.xib */,
+				B97FE3A11A79CA3500737AC1 /* DrawerDemo.xcdatamodeld */,
+				B97FE39A1A79CA3500737AC1 /* Supporting Files */,
+				B97FE3D61A79CBA300737AC1 /* SideMenuTableViewController.h */,
+				B97FE3D71A79CBA300737AC1 /* SideMenuTableViewController.m */,
+				B97FE3D91A79CBB500737AC1 /* HomeViewController.h */,
+				B97FE3DA1A79CBB500737AC1 /* HomeViewController.m */,
+			);
+			path = DrawerDemo;
+			sourceTree = "<group>";
+		};
+		B97FE39A1A79CA3500737AC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B97FE39B1A79CA3500737AC1 /* Info.plist */,
+				B97FE39C1A79CA3500737AC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B97FE3B01A79CA3600737AC1 /* DrawerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B97FE3B31A79CA3600737AC1 /* DrawerDemoTests.m */,
+				B97FE3B11A79CA3600737AC1 /* Supporting Files */,
+			);
+			path = DrawerDemoTests;
+			sourceTree = "<group>";
+		};
+		B97FE3B11A79CA3600737AC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B97FE3B21A79CA3600737AC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B97FE3BD1A79CB8100737AC1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B97FE3BE1A79CB8100737AC1 /* check.png */,
+				B97FE3BF1A79CB8100737AC1 /* Icon-Small-Message.png */,
+				B97FE3C01A79CB8100737AC1 /* Icon-Small-Records.png */,
+				B97FE3C11A79CB8100737AC1 /* Icon-Small-SelfIntro.png */,
+				B97FE3C21A79CB8100737AC1 /* Icon-Small-Setting.png */,
+				B97FE3C31A79CB8100737AC1 /* Icon-TitleImage-Promise.png */,
+				B97FE3C41A79CB8100737AC1 /* Icon-TitleImage-Promise1.png */,
+				B97FE3C51A79CB8100737AC1 /* Left-Reveal-Icon.png */,
+				B97FE3C61A79CB8100737AC1 /* Left-Reveal-Icon@2x.png */,
+				B97FE3C71A79CB8100737AC1 /* Right-Arrow-Icon.png */,
+				B97FE3C81A79CB8100737AC1 /* Window- Background@2x.png */,
+				B97FE3C91A79CB8100737AC1 /* Window-Background.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B9AA47A01A79CF8900212F59 /* MSDynamicsDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA47A11A79CF8900212F59 /* MSDynamicsDrawerStyler.h */,
+				B9AA47A21A79CF8900212F59 /* MSDynamicsDrawerStyler.m */,
+				B9AA47A31A79CF8900212F59 /* MSDynamicsDrawerViewController.h */,
+				B9AA47A41A79CF8900212F59 /* MSDynamicsDrawerViewController.m */,
+				B9AA47A51A79CF8900212F59 /* MSDynamicsViewController.h */,
+				B9AA47A61A79CF8900212F59 /* MSDynamicsViewController.m */,
+			);
+			path = MSDynamicsDrawerViewController;
+			sourceTree = "<group>";
+		};
+		B9AA47AA1A79D02000212F59 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA47BB1A79D5E300212F59 /* UIButton+Base.h */,
+				B9AA47BC1A79D5E300212F59 /* UIButton+Base.m */,
+				B9AA47BD1A79D5E300212F59 /* UIFont+Base.h */,
+				B9AA47BE1A79D5E300212F59 /* UIFont+Base.m */,
+				B9AA47BF1A79D5E300212F59 /* UILabel+Base.h */,
+				B9AA47C01A79D5E300212F59 /* UILabel+Base.m */,
+				B9AA47C11A79D5E300212F59 /* UIView+Base.h */,
+				B9AA47C21A79D5E300212F59 /* UIView+Base.m */,
+				B9AA47B51A79D44C00212F59 /* SideMenuCell.h */,
+				B9AA47B61A79D44C00212F59 /* SideMenuCell.m */,
+				B9AA47B71A79D44C00212F59 /* SideMenuTableViewHeader.h */,
+				B9AA47B81A79D44C00212F59 /* SideMenuTableViewHeader.m */,
+				B9AA47AE1A79D18100212F59 /* M13BadgeView */,
+				B9AA47AB1A79D03200212F59 /* UIColor+Base.h */,
+				B9AA47AC1A79D03200212F59 /* UIColor+Base.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B9AA47AE1A79D18100212F59 /* M13BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA47AF1A79D18100212F59 /* Classes */,
+				B9AA47B21A79D18100212F59 /* README.md */,
+			);
+			path = M13BadgeView;
+			sourceTree = "<group>";
+		};
+		B9AA47AF1A79D18100212F59 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA47B01A79D18100212F59 /* M13BadgeView.h */,
+				B9AA47B11A79D18100212F59 /* M13BadgeView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B97FE3961A79CA3500737AC1 /* DrawerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97FE3B71A79CA3600737AC1 /* Build configuration list for PBXNativeTarget "DrawerDemo" */;
+			buildPhases = (
+				B97FE3931A79CA3500737AC1 /* Sources */,
+				B97FE3941A79CA3500737AC1 /* Frameworks */,
+				B97FE3951A79CA3500737AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawerDemo;
+			productName = DrawerDemo;
+			productReference = B97FE3971A79CA3500737AC1 /* DrawerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B97FE3AC1A79CA3600737AC1 /* DrawerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97FE3BA1A79CA3600737AC1 /* Build configuration list for PBXNativeTarget "DrawerDemoTests" */;
+			buildPhases = (
+				B97FE3A91A79CA3600737AC1 /* Sources */,
+				B97FE3AA1A79CA3600737AC1 /* Frameworks */,
+				B97FE3AB1A79CA3600737AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B97FE3AF1A79CA3600737AC1 /* PBXTargetDependency */,
+			);
+			name = DrawerDemoTests;
+			productName = DrawerDemoTests;
+			productReference = B97FE3AD1A79CA3600737AC1 /* DrawerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B97FE38F1A79CA3500737AC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = chu;
+				TargetAttributes = {
+					B97FE3961A79CA3500737AC1 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B97FE3AC1A79CA3600737AC1 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B97FE3961A79CA3500737AC1;
+					};
+				};
+			};
+			buildConfigurationList = B97FE3921A79CA3500737AC1 /* Build configuration list for PBXProject "DrawerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B97FE38E1A79CA3500737AC1;
+			productRefGroup = B97FE3981A79CA3500737AC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B97FE3961A79CA3500737AC1 /* DrawerDemo */,
+				B97FE3AC1A79CA3600737AC1 /* DrawerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B97FE3951A79CA3500737AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97FE3D01A79CB8100737AC1 /* Icon-TitleImage-Promise1.png in Resources */,
+				B97FE3D51A79CB8100737AC1 /* Window-Background.png in Resources */,
+				B97FE3CA1A79CB8100737AC1 /* check.png in Resources */,
+				B97FE3A81A79CA3600737AC1 /* LaunchScreen.xib in Resources */,
+				B97FE3D31A79CB8100737AC1 /* Right-Arrow-Icon.png in Resources */,
+				B97FE3CB1A79CB8100737AC1 /* Icon-Small-Message.png in Resources */,
+				B97FE3D11A79CB8100737AC1 /* Left-Reveal-Icon.png in Resources */,
+				B97FE3A51A79CA3600737AC1 /* Images.xcassets in Resources */,
+				B97FE3CE1A79CB8100737AC1 /* Icon-Small-Setting.png in Resources */,
+				B97FE3CF1A79CB8100737AC1 /* Icon-TitleImage-Promise.png in Resources */,
+				B97FE3D41A79CB8100737AC1 /* Window- Background@2x.png in Resources */,
+				B97FE3D21A79CB8100737AC1 /* Left-Reveal-Icon@2x.png in Resources */,
+				B97FE3CC1A79CB8100737AC1 /* Icon-Small-Records.png in Resources */,
+				B97FE3CD1A79CB8100737AC1 /* Icon-Small-SelfIntro.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97FE3AB1A79CA3600737AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B97FE3931A79CA3500737AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AA47C61A79D5E300212F59 /* UIView+Base.m in Sources */,
+				B9AA47A81A79CF8900212F59 /* MSDynamicsDrawerViewController.m in Sources */,
+				B97FE3A31A79CA3500737AC1 /* DrawerDemo.xcdatamodeld in Sources */,
+				B97FE3D81A79CBA300737AC1 /* SideMenuTableViewController.m in Sources */,
+				B9AA47BA1A79D44C00212F59 /* SideMenuTableViewHeader.m in Sources */,
+				B9AA47C31A79D5E300212F59 /* UIButton+Base.m in Sources */,
+				B9AA47AD1A79D03200212F59 /* UIColor+Base.m in Sources */,
+				B97FE3A01A79CA3500737AC1 /* AppDelegate.m in Sources */,
+				B9AA47C41A79D5E300212F59 /* UIFont+Base.m in Sources */,
+				B9AA47A91A79CF8900212F59 /* MSDynamicsViewController.m in Sources */,
+				B97FE3DB1A79CBB500737AC1 /* HomeViewController.m in Sources */,
+				B97FE39D1A79CA3500737AC1 /* main.m in Sources */,
+				B9AA47B31A79D18100212F59 /* M13BadgeView.m in Sources */,
+				B9AA47B41A79D18100212F59 /* README.md in Sources */,
+				B9AA47C51A79D5E300212F59 /* UILabel+Base.m in Sources */,
+				B9AA47A71A79CF8900212F59 /* MSDynamicsDrawerStyler.m in Sources */,
+				B9AA47B91A79D44C00212F59 /* SideMenuCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97FE3A91A79CA3600737AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97FE3B41A79CA3600737AC1 /* DrawerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B97FE3AF1A79CA3600737AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B97FE3961A79CA3500737AC1 /* DrawerDemo */;
+			targetProxy = B97FE3AE1A79CA3600737AC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B97FE3A61A79CA3600737AC1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B97FE3A71A79CA3600737AC1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B97FE3B51A79CA3600737AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B97FE3B61A79CA3600737AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B97FE3B81A79CA3600737AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DrawerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B97FE3B91A79CA3600737AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DrawerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B97FE3BB1A79CA3600737AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DrawerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawerDemo.app/DrawerDemo";
+			};
+			name = Debug;
+		};
+		B97FE3BC1A79CA3600737AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DrawerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawerDemo.app/DrawerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B97FE3921A79CA3500737AC1 /* Build configuration list for PBXProject "DrawerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97FE3B51A79CA3600737AC1 /* Debug */,
+				B97FE3B61A79CA3600737AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97FE3B71A79CA3600737AC1 /* Build configuration list for PBXNativeTarget "DrawerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97FE3B81A79CA3600737AC1 /* Debug */,
+				B97FE3B91A79CA3600737AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97FE3BA1A79CA3600737AC1 /* Build configuration list for PBXNativeTarget "DrawerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97FE3BB1A79CA3600737AC1 /* Debug */,
+				B97FE3BC1A79CA3600737AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B97FE3A11A79CA3500737AC1 /* DrawerDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B97FE3A21A79CA3500737AC1 /* DrawerDemo.xcdatamodel */,
+			);
+			currentVersion = B97FE3A21A79CA3500737AC1 /* DrawerDemo.xcdatamodel */;
+			path = DrawerDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B97FE38F1A79CA3500737AC1 /* Project object */;
+}
