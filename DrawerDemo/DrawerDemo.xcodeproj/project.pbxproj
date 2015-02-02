@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B907C7AE1A7B68DB0021180D /* headxi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B907C7AD1A7B68DB0021180D /* headxi.jpg */; };
 		B94FF3A21A7A137700622810 /* TypeResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3A11A7A137700622810 /* TypeResumeViewController.m */; };
 		B94FF3A51A7A138C00622810 /* TypeQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3A41A7A138C00622810 /* TypeQueryViewController.m */; };
 		B94FF3A81A7A139E00622810 /* TypeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FF3A71A7A139E00622810 /* TypeMessageViewController.m */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B907C7AD1A7B68DB0021180D /* headxi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = headxi.jpg; sourceTree = "<group>"; };
 		B94FF3A01A7A137700622810 /* TypeResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeResumeViewController.h; sourceTree = "<group>"; };
 		B94FF3A11A7A137700622810 /* TypeResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeResumeViewController.m; sourceTree = "<group>"; };
 		B94FF3A31A7A138C00622810 /* TypeQueryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeQueryViewController.h; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		B97FE3BD1A79CB8100737AC1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B907C7AD1A7B68DB0021180D /* headxi.jpg */,
 				B97FE3BE1A79CB8100737AC1 /* check.png */,
 				B97FE3BF1A79CB8100737AC1 /* Icon-Small-Message.png */,
 				B97FE3C01A79CB8100737AC1 /* Icon-Small-Records.png */,
@@ -385,6 +388,7 @@
 				B97FE3D01A79CB8100737AC1 /* Icon-TitleImage-Promise1.png in Resources */,
 				B97FE3D51A79CB8100737AC1 /* Window-Background.png in Resources */,
 				B97FE3CA1A79CB8100737AC1 /* check.png in Resources */,
+				B907C7AE1A7B68DB0021180D /* headxi.jpg in Resources */,
 				B97FE3A81A79CA3600737AC1 /* LaunchScreen.xib in Resources */,
 				B97FE3D31A79CB8100737AC1 /* Right-Arrow-Icon.png in Resources */,
 				B97FE3CB1A79CB8100737AC1 /* Icon-Small-Message.png in Resources */,

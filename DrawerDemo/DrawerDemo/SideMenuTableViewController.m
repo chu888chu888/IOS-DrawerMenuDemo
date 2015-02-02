@@ -98,10 +98,12 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     float adjustHeight = ([UIView globalHeight]<470)?280:330;
+
     if (section == 0) {
         UIView *sectionView = [[UIView alloc]init];
         UIImageView *headerImg=[[UIImageView alloc]initWithFrame:CGRectMake(85.0, 0, 110, 110)];
         headerImg.center = CGPointMake(130, ([UIView globalHeight]-adjustHeight)*0.5);
+        [headerImg setImage:[UIImage imageNamed:@"headxi.jpg"]];
         [headerImg setBackgroundColor:[UIColor whiteColor]];
         [headerImg setContentMode:UIViewContentModeScaleAspectFill];
         [headerImg setClipsToBounds:YES];
@@ -116,6 +118,10 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
         return headerView;
     }
     
+}
+//每个section显示的标题
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -140,7 +146,7 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SideMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:SideMenuCellReuseIdentifier forIndexPath:indexPath];
-    
+
     NSString *title = self.paneViewControllerTitles[@([self paneViewControllerTypeForIndexPath:indexPath])];
     NSString *imageName = self.paneViewControllerImages[@([self paneViewControllerTypeForIndexPath:indexPath])];
     [cell.sideCellImageView setImage:[UIImage imageNamed:imageName]];
@@ -151,6 +157,16 @@ NSString * const SideDrawerHeaderReuseIdentifier = @"SideMenuTableViewHeader";
         _messageBadgeView.font = [UIFont baseWithSize:13];
         _messageBadgeView.badgeBackgroundColor = [UIColor noodleYellow];
         _messageBadgeView.text = @"3";
+        _messageBadgeView.hidesWhenZero = YES;
+        [cell.sideCellImageView addSubview:_messageBadgeView];
+    }
+    if(indexPath.section == 0 && indexPath.row ==1)
+    {
+        _messageBadgeView = [[M13BadgeView alloc] initWithFrame:CGRectMake(0, 0, 18.0, 18.0)];
+        _messageBadgeView.alignmentShift = CGSizeMake(20, 4);
+        _messageBadgeView.font = [UIFont baseWithSize:13];
+        _messageBadgeView.badgeBackgroundColor = [UIColor noodleYellow];
+        _messageBadgeView.text = @"5";
         _messageBadgeView.hidesWhenZero = YES;
         [cell.sideCellImageView addSubview:_messageBadgeView];
     }
